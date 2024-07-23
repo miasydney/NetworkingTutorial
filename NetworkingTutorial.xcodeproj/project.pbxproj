@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94077E522C4F49640086E590 /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94077E512C4F49640086E590 /* CoinsViewModel.swift */; };
 		94802EC22C4011C900A2E4E4 /* NetworkingTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EC12C4011C900A2E4E4 /* NetworkingTutorialApp.swift */; };
 		94802EC42C4011C900A2E4E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94802EC32C4011C900A2E4E4 /* ContentView.swift */; };
 		94802EC62C4011DA00A2E4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94802EC52C4011DA00A2E4E4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94077E512C4F49640086E590 /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
 		94802EBE2C4011C800A2E4E4 /* NetworkingTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94802EC12C4011C900A2E4E4 /* NetworkingTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTutorialApp.swift; sourceTree = "<group>"; };
 		94802EC32C4011C900A2E4E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,9 +53,8 @@
 		94802EC02C4011C800A2E4E4 /* NetworkingTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				94802ECF2C4011E800A2E4E4 /* New Group */,
-				94802EC12C4011C900A2E4E4 /* NetworkingTutorialApp.swift */,
-				94802EC32C4011C900A2E4E4 /* ContentView.swift */,
+				94802ECF2C4011E800A2E4E4 /* App */,
+				94802ED02C4011F200A2E4E4 /* Core */,
 				94802EC52C4011DA00A2E4E4 /* Assets.xcassets */,
 				94802EC72C4011DA00A2E4E4 /* Preview Content */,
 			);
@@ -68,11 +69,53 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		94802ECF2C4011E800A2E4E4 /* New Group */ = {
+		94802ECF2C4011E800A2E4E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94802EC12C4011C900A2E4E4 /* NetworkingTutorialApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94802ED02C4011F200A2E4E4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				94802ED12C4011F500A2E4E4 /* AllCoins */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		94802ED12C4011F500A2E4E4 /* AllCoins */ = {
+			isa = PBXGroup;
+			children = (
+				94802ED42C40122400A2E4E4 /* ViewModel */,
+				94802ED32C40121E00A2E4E4 /* View */,
+				94802ED22C40121900A2E4E4 /* Model */,
+			);
+			path = AllCoins;
+			sourceTree = "<group>";
+		};
+		94802ED22C40121900A2E4E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94802ED32C40121E00A2E4E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94802EC32C4011C900A2E4E4 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94802ED42C40122400A2E4E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94077E512C4F49640086E590 /* CoinsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94802EC42C4011C900A2E4E4 /* ContentView.swift in Sources */,
+				94077E522C4F49640086E590 /* CoinsViewModel.swift in Sources */,
 				94802EC22C4011C900A2E4E4 /* NetworkingTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
